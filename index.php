@@ -10,5 +10,4 @@ if (isset($_GET['page']) and in_array($_GET['page'], $availableRoutes)) {
 }
 
 
-    require './views/layout.php'; 
-?>
+    require './views/layout.php';
