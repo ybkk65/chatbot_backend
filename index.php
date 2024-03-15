@@ -1,14 +1,14 @@
 <?php 
 
-require_once './connexion.php';
+//require_once './connexion.php';
 
-$availableRoutes = [];
+$availableRoutes = ['home'];
 
-$route = 'homepage';
+$route = 'home';
 if (isset($_GET['page']) and in_array($_GET['page'], $availableRoutes)) {
     $route = $_GET['page'];
 }
 
 
-    require './layout.php'; 
+    require './views/layout.php'; 
 ?>
